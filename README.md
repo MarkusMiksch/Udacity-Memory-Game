@@ -1,10 +1,19 @@
-# Memory Game Project
+# Udacity Memory Game Project
 
-## Instructions
+## How to run the app
 
-This is a simple Memory Game. Every move you can turn up two cards. If they match they will remain face up. If not, both will be turned down again. You have won the game when all cards are face up. 
-The amount of time and moves it took will determin your rating (1-3 stars).
+1. Download the zip file or clone the repo to your Desktop.
+2. Open `index.html` in your browser.
 
-The project consists of HTML, CSS and JavaScript. No extern librarys are needed.
+## How to play the game
 
-Some of the modal code is from w3schools.com
+This is a simple Memory Game. Every move the player can reveal two cards. If they match they will remain uncovered. If not, both will be turned facedown again. The player has won the game if all cards are uncovered. 
+The player gets a rating (1-3 stars) depending on how many moves it took him to solve it.
+
+## Project Overview
+
+The project consists of HTML, CSS and JavaScript. No extern librarys were needed.
+Some of the modal code snippets are from w3schools.com.
+
+
+
