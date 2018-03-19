@@ -22,7 +22,7 @@ let star22 = document.getElementById("star22");
 
 // variables for shuffling
 let openCards = [];
-let moveCounter = 23;
+let moveCounter = 0;
 let deck = document.querySelector(".deck");
 let imageArray = ["fa-diamond", "fa-paper-plane-o", "fa-anchor", "fa-bolt",
 	"fa-cube", "fa-anchor", "fa-leaf", "fa-bicycle", "fa-diamond", "fa-bomb",
@@ -40,8 +40,6 @@ span.addEventListener("click", function () {
 
 document.addEventListener("DOMContentLoaded", giveNewImages);
 deck.addEventListener('click', lookAtCard);
-
-startTime();
 
 // this function assigns the shuffled image-names to the cards
 function giveNewImages() {
@@ -68,6 +66,10 @@ function shuffle(array) {
 }
 
 function lookAtCard(event) {
+	// start timer when player clicks the first card (only once)
+	if (sec===0 && min===0 && hour ===0) {
+		startTime();
+	}
 	// to enable only clicks on the single "li´s", not the whole "ul"
 	if (event.target.nodeName === 'LI') {
 		if (!openCards.includes(event.target)) {
