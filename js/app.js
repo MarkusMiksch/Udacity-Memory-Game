@@ -16,11 +16,13 @@ modalRestart.addEventListener("click", restart);
 // variables for the 3 stars in the header
 let star3 = document.getElementById("star3");
 let star2 = document.getElementById("star2");
-let star1 = document.getElementById("star1");
+
+let star33 = document.getElementById("star33");
+let star22 = document.getElementById("star22");
 
 // variables for shuffling
 let openCards = [];
-let moveCounter = 0;
+let moveCounter = 23;
 let deck = document.querySelector(".deck");
 let imageArray = ["fa-diamond", "fa-paper-plane-o", "fa-anchor", "fa-bolt",
 	"fa-cube", "fa-anchor", "fa-leaf", "fa-bicycle", "fa-diamond", "fa-bomb",
@@ -113,12 +115,11 @@ function incrementMoves() {
 	document.querySelector(".moves").textContent = moveCounter;
 	if (moveCounter > 15) {
 		star3.className = "fa fa-star-o";
+		star33.className = "fa fa-star-o";
 	};
 	if (moveCounter > 20) {
 		star2.className = "fa fa-star-o";
-	};
-	if (moveCounter > 25) {
-		star1.className = "fa fa-star-o";
+		star22.className = "fa fa-star-o";
 	};
 }
 
